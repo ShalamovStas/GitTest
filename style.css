@@ -1,3 +1,4 @@
 body {
-  background-color: green;
+  background-color: url(image.jpg);
+  background-size: cover;
 }
