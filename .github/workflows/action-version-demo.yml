@@ -1,14 +1,14 @@
 name: AZ-400 Action Version Demo
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
 
-  use-tag: 
-    name: 1 - Action referenced by TAG 
+  use-tag:
+    name: 1 - Action referenced by TAG
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout using a tag
         uses: actions/checkout@v7.0.1
@@ -19,10 +19,10 @@ jobs:
           echo "Reference type: TAG"
           echo "Reference: v7.0.1"
 
-    use-branch: 
-      name: 2 - Action referenced by BRANCH 
-      runs-on: ubuntu-latest
-    
+  use-branch:
+    name: 2 - Action referenced by BRANCH
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout using a branch
         uses: actions/checkout@main
@@ -33,11 +33,11 @@ jobs:
           echo "Reference type: BRANCH"
           echo "Reference: main"
 
-    use-sha: 
-      name: 3 - Action referenced by SHA 
-      runs-on: ubuntu-latest
+  use-sha:
+    name: 3 - Action referenced by SHA
+    runs-on: ubuntu-latest
 
-      steps:
+    steps:
       - name: Checkout using an exact SHA
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
