@@ -1,5 +1,8 @@
 name: AZ-400 Action Version Demo
-on: workflow_dispatch:
+
+on: 
+  workflow_dispatch:
+
 jobs:
 
   use-tag: 
