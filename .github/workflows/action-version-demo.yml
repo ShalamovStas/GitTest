@@ -46,3 +46,12 @@ jobs:
           echo "Checkout succeeded"
           echo "Reference type: SHA"
           echo "Pinned to one exact action commit"
+
+  use-my-job:
+    name: 4 - MY job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print result
+        run: |
+          echo "My test job"
