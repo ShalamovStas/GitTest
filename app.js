@@ -2,4 +2,5 @@ function hello(name) {
   console.log("Hello " + name);
 }
 
-hello("Azure DevOps");
+//Trigger CodeQL PR workflow
+hello("AZ-400");
