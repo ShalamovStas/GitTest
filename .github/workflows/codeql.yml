@@ -3,7 +3,7 @@ name: "CodeQL Lab"
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   analyze:
